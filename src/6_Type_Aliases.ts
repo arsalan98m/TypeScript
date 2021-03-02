@@ -25,3 +25,20 @@ const greet = (user:objWithName) => {
 const greetAgain = (user:objWithName) => {
     console.log(`${user.name} says hello`);
 }
+
+
+
+type Greeting = (name: string) => string;
+const greeting: Greeting = (name) => "Hello";
+
+
+type Person = {
+    name: string;
+    hungry: boolean;
+} & { youtuber: boolean }
+
+const arsalan: Person = {
+    name: "arsalan",
+    hungry: false,
+    youtuber:false,
+}
