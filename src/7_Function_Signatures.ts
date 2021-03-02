@@ -12,6 +12,16 @@ greet = (name: string, greeting: string) => {
     console.log(`${name} says ${greeting}`)
 }
 
+// example 2 (you can also define this way)
+type Greet= (a: string, b: string) => void;  // we says greet function have two paramaeters with both have a string and returning void
+
+let greet :Greet= (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`)
+}
+
+greet("arsalan","hi");
+
+
 
 // greet = (name: string, greeting: number) => {
 //     console.log(`${name} says ${greeting}`)
